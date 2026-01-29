@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('IMG-20250621-WA0100.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 50px auto;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto 0 auto;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Happy Birthday!</h1>
+        <img src="IMG-20250621-WA0100.jpg"                                               
+        <input id="nama" type="text" placeholder="M.sirajuddin">
+        <button onclick="ucapan()">Klik</button>
+        <p id="hasil"></p>
+    </div>
+
+    <script>
+        function ucapan() {
+            let nama = document.getElementById("nama").value;
+            document.getElementById("hasil").innerHTML = `Happy Birthday, ${nama}! Semoga hari mu penuh dengan kebahagiaan dan cinta!`;
+        }
+    </script>
+</body>
+</html>
